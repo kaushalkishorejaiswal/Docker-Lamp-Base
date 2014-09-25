@@ -51,8 +51,5 @@ RUN chmod 755 /*.sh
 RUN a2enmod php5
 RUN a2enmod rewrite
 
-# Adding the Configuration File for host
-ADD 000-default.conf /etc/apache2/sites-enabled/000-default.conf
-
 # Add volumes for MySQL 
 VOLUME  ["/etc/mysql", "/var/lib/mysql" ]
